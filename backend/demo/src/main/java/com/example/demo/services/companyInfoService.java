@@ -28,7 +28,7 @@ public class companyInfoService {
         return repository.save(company);
     }
 
-    public String getCompanyDescriptionById(Long companyId) {
-        return repository.getCompanyDescriptionById(companyId);
+    public companyInfoEntity getCompanyById(Long companyId) {
+        return repository.getCompanyById(companyId);
     }
 }

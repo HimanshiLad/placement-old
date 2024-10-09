@@ -8,6 +8,6 @@ import com.example.demo.entity.companyInfoEntity;
 public interface companyInfoRepo extends JpaRepository<companyInfoEntity, Long> {
     List<companyInfoEntity> findByCategory(String category);
 
-    String getCompanyDescriptionById(Long companyId);
+    companyInfoEntity getCompanyById(Long companyId);
 
 }

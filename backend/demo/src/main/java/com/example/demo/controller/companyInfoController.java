@@ -31,9 +31,9 @@ public class companyInfoController {
     public List<List<companyInfoEntity>> getCompaniesbyCategory(@RequestParam List<String> categories) {
         return service.getcompaniesByCategory(categories);
     }
-    @GetMapping("/{companyID}/description")
-    public String getCompanyDescription(@PathVariable Long companyID) {
-        return service.getCompanyDescriptionById(companyID);
+    @GetMapping("/{companyID}")
+    public companyInfoEntity getCompanyById(@PathVariable Long companyID) {
+        return service.getCompanyById(companyID);
     }
 
     @PostMapping("/add-company")
